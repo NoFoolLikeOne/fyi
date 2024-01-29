@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", function() {
     .then(response => response.json())
     .then(data => {
       // Redirect the user to the returned URL
-      window.location.href = data.redirectUrl;
+      window.location.href = data.url;
     })
     .catch(error => {
       console.error("Error fetching data from API:", error);
