@@ -13,6 +13,7 @@ document.addEventListener("DOMContentLoaded", function () {
       window.location.href = data.url;
     })
     .catch(error => {
+      window.location.href = "thevoid.html"
       console.error("Error fetching data from API:", error);
       // Optionally, you can handle errors here
     });
