@@ -11,7 +11,7 @@ jobs:
 
     - name: Init new repo in dist folder and commit generated files
       run: |
-        cd tools
+        cd fyi
         echo "canonn.social" > CNAME
         git init
         git add -A
@@ -26,4 +26,4 @@ jobs:
         github_token: ${{ secrets.GITHUB_TOKEN }}
         branch: gh-pages
         force: true
-        directory: ./tools
+        directory: ./fyi
